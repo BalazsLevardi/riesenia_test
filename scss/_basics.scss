@@ -366,6 +366,13 @@ h2{
             .modal-body{
                 padding: 0px 25px 35px;
 
+                .g-recaptcha{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 24px;
+                }
+
                 .form-group{
                     font-family: "mulishblc";
                     font-size: 16px;
@@ -516,6 +523,10 @@ h2{
 
                 @media (max-width: $mw_tablet2){
                     &{
+                        .g-recaptcha{
+                            margin-bottom: 20px;
+                        }
+
                         .form-group{
                             margin-bottom: 20px;
         
@@ -546,6 +557,10 @@ h2{
                 @media (max-width: $mw_phone){
                     &{
                         padding: 0px 18px 25px;
+
+                        .g-recaptcha{
+                            margin-bottom: 18px;
+                        }
 
                         .form-group{
                             margin-bottom: 18px;
