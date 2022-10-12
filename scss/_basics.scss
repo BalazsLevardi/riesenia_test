@@ -336,10 +336,16 @@ h2{
 }
 
 .modal-open {
-    overflow-y: hidden;
+    padding-right: 0px !important;
 }
 
 .modal{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar { 
+        display: none;
+    }
 
     .modal-dialog{
         max-width: 547px;
