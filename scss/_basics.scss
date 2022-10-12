@@ -335,6 +335,12 @@ h2{
     opacity: .9 !important;
 }
 
+.modal-open {
+    height: 100vh;
+    overflow-y: hidden;
+    padding-right: 0 !important;
+}
+
 .modal{
 
     .modal-dialog{
