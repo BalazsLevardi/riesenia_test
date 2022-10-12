@@ -49,7 +49,6 @@ function isInViewportPink(item) {
 
     if (rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)) {
         for (let i = 0; i < item.children.length; i++) {
-            console.log(item.children[i].nodeName.toLowerCase());
             if (item.children[i].nodeName.toLowerCase() == "span") {
                 item.children[i].classList.add("underpink");
             }
@@ -94,8 +93,3 @@ window.addEventListener("load", function () {
     isInViewportSvg(svg3);
     isInViewportSvg(svg4);
 });
-
-
-
-
-
