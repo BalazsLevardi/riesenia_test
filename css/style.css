@@ -426,7 +426,16 @@ h2 {
 }
 
 .modal-open {
-  overflow-y: hidden;
+  padding-right: 0px !important;
+}
+
+.modal {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.modal::-webkit-scrollbar {
+  display: none;
 }
 
 .modal .modal-dialog {
