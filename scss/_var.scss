@@ -1,0 +1,67 @@
+$c_purple: #3D2E80;
+$c_purple2: #A52071;
+$c_purple3: #b33281;
+$c_pink: #EE325C;
+$c_pink2: #DC1969;
+$c_pink3: #c00974;
+$c_pink4: #F698AD;
+$c_pink5: #AC1F70;
+
+$mw_tablet: 995px;
+$mw_tablet2: 768px;
+$mw_phone: 420px;
+$mw_phone2: 379px;
+
+@mixin bglingrad{
+    background: linear-gradient(170deg, $c_purple 45%, $c_pink5 100%);
+
+    @media (max-width: $mw_tablet){
+        background: linear-gradient(163deg, $c_purple 48%, $c_pink5 100%);
+    }
+
+    @media (max-width: $mw_tablet2){
+        background: linear-gradient(155deg, $c_purple 50%, $c_pink5 100%);
+    }
+}
+
+@font-face {
+    font-family: 'mulishli';
+    src: url('../font/Mulish-Light.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mulishreg';
+    src: url('../font/Mulish-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mulishsem';
+    src: url('../font/Mulish-SemiBold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mulishbol';
+    src: url('../font/Mulish-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mulishexb';
+    src: url('../font/Mulish-ExtraBold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mulishblc';
+    src: url('../font/Mulish-Black.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
