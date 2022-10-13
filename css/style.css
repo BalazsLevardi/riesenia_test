@@ -49,11 +49,11 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden !important;
 }
 
-.fade-left, .fade-right {
+html, html body {
   overflow-x: hidden !important;
+  width: 100%;
 }
 
 .font_exbold {
