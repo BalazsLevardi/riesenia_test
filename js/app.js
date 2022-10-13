@@ -93,3 +93,4 @@ window.addEventListener("load", function () {
     isInViewportSvg(svg3);
     isInViewportSvg(svg4);
 });
+
