@@ -8,7 +8,11 @@
 
 html{
     scroll-behavior: smooth;
-    overflow-x: hidden; //animation fade-left & fade-rigth
+    overflow-x: hidden !important; //animation fade-left & fade-rigth
+}
+
+.fade-left, .fade-right{
+    overflow-x: hidden !important;
 }
 
 .font_exbold{
@@ -45,6 +49,7 @@ html{
         &{
             padding-left: 28px;
             padding-right: 28px;
+            // overflow-y: hidden;
         }
     }
 
@@ -129,6 +134,10 @@ h2{
         background: rgba($c_pink, $alpha: .24);
         animation: underAni 1s ease .5s forwards;
 
+        @media (max-width: $mw_tablet2) {
+            height: 10px;
+        }
+
         @keyframes underAni {
             from{
                 width: 0%;
@@ -169,10 +178,6 @@ h2{
     @media (max-width: $mw_tablet){
         &{
             margin: 0 auto;
-
-            li{
-                font-family: "mulishreg";
-            }
         }
     }
 
@@ -250,33 +255,33 @@ h2{
 //animation
 #svg1{
     path{
-        stroke-dasharray: 208px;
-        stroke-dashoffset: 208px;
+        stroke-dasharray: 208.67076110839844px;
+        stroke-dashoffset: 208.67076110839844px;
     }
 }
 
 #svg2{
     path{
-        stroke-dasharray: 296px;
-        stroke-dashoffset: 296px;
+        stroke-dasharray: 296.811279296875px;
+        stroke-dashoffset: 296.811279296875px;
     }
 }
 
 #svg3{
     path{
-        stroke-dasharray: 305px;
-        stroke-dashoffset: 305px;
+        stroke-dasharray: 305.7547607421875px;
+        stroke-dashoffset: 305.7547607421875px;
     }
 }
 
 #svg4{
     path:nth-child(1){
-        stroke-dasharray: 233px;
-        stroke-dashoffset: 233px;
+        stroke-dasharray: 233.2716064453125px;
+        stroke-dashoffset: 233.2716064453125px;
     }
     path:nth-child(2){
-        stroke-dasharray: 58px;
-        stroke-dashoffset: 58px;
+        stroke-dasharray: 58.412254333496094px;
+        stroke-dashoffset: 58.412254333496094px;
     }
 }
 
@@ -295,9 +300,13 @@ h2{
     right: 0;
     background-color: $c_purple;
     color: #fff;
-    padding: 16px;
+    font-size: 14px;
+    padding: 14px;
     transition: all .4s ease;
     box-shadow: 0 -4px 16px rgba($c_purple, $alpha: .6);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
 
     &.active{
         bottom: 0;
@@ -310,14 +319,14 @@ h2{
         align-items: center;
         text-align: center;
         margin: 0 auto;
-        gap: 12px;
+        gap: 10px;
 
         .cookie_btn{
             border-radius: 5em;
             padding: 8px 15px;
         }
 
-        @media (max-width: $mw_phone) {
+        @media (max-width: $mw_phone2) {
             &{
                 flex-direction: column;
                 max-width: 300px;
