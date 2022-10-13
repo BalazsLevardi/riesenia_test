@@ -49,7 +49,11 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+}
+
+.fade-left, .fade-right {
+  overflow-x: hidden !important;
 }
 
 .font_exbold {
@@ -182,6 +186,12 @@ h2 {
           animation: underAni 1s ease .5s forwards;
 }
 
+@media (max-width: 768px) {
+  .underpink::after {
+    height: 10px;
+  }
+}
+
 @-webkit-keyframes underAni {
   from {
     width: 0%;
@@ -231,9 +241,6 @@ h2 {
 @media (max-width: 995px) {
   .listing {
     margin: 0 auto;
-  }
-  .listing li {
-    font-family: "mulishreg";
   }
 }
 
@@ -329,28 +336,28 @@ h2 {
 }
 
 #svg1 path {
-  stroke-dasharray: 208px;
-  stroke-dashoffset: 208px;
+  stroke-dasharray: 208.67076110839844px;
+  stroke-dashoffset: 208.67076110839844px;
 }
 
 #svg2 path {
-  stroke-dasharray: 296px;
-  stroke-dashoffset: 296px;
+  stroke-dasharray: 296.811279296875px;
+  stroke-dashoffset: 296.811279296875px;
 }
 
 #svg3 path {
-  stroke-dasharray: 305px;
-  stroke-dashoffset: 305px;
+  stroke-dasharray: 305.7547607421875px;
+  stroke-dashoffset: 305.7547607421875px;
 }
 
 #svg4 path:nth-child(1) {
-  stroke-dasharray: 233px;
-  stroke-dashoffset: 233px;
+  stroke-dasharray: 233.2716064453125px;
+  stroke-dashoffset: 233.2716064453125px;
 }
 
 #svg4 path:nth-child(2) {
-  stroke-dasharray: 58px;
-  stroke-dashoffset: 58px;
+  stroke-dasharray: 58.412254333496094px;
+  stroke-dashoffset: 58.412254333496094px;
 }
 
 @-webkit-keyframes svganim {
@@ -372,11 +379,14 @@ h2 {
   right: 0;
   background-color: #3D2E80;
   color: #fff;
-  padding: 16px;
+  font-size: 14px;
+  padding: 14px;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
   -webkit-box-shadow: 0 -4px 16px rgba(61, 46, 128, 0.6);
           box-shadow: 0 -4px 16px rgba(61, 46, 128, 0.6);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .cookie.active {
@@ -399,7 +409,7 @@ h2 {
           align-items: center;
   text-align: center;
   margin: 0 auto;
-  gap: 12px;
+  gap: 10px;
 }
 
 .cookie .cookie_cont .cookie_btn {
@@ -407,7 +417,7 @@ h2 {
   padding: 8px 15px;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 379px) {
   .cookie .cookie_cont {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
