@@ -8,12 +8,16 @@
 
 html{
     scroll-behavior: smooth;
-    overflow-x: hidden !important; //animation fade-left & fade-rigth
+
+    &, body{
+        overflow-x: hidden !important; //animation fade-left & fade-rigth
+        width: 100%;
+    }
 }
 
-.fade-left, .fade-right{
-    overflow-x: hidden !important;
-}
+// .fade-left, .fade-right{
+//     overflow-x: hidden !important;
+// }
 
 .font_exbold{
     font-family: "mulishexb";
@@ -49,7 +53,6 @@ html{
         &{
             padding-left: 28px;
             padding-right: 28px;
-            // overflow-y: hidden;
         }
     }
 
@@ -522,10 +525,8 @@ h2{
                             margin: 0 16px;
                             padding: 2px;
                             opacity: 1;
-                            // transition: all .4s ease;
 
                             &:hover{
-                                // transform: scale(1.1);
                                 background-color: rgba($c_pink, $alpha: .4);
                             }
                         }
